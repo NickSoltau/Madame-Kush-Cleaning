@@ -9,7 +9,9 @@ function Services() {
   ]
 
   return (
-    <div id="services" className="bg-white px-6 py-12">
+    <div id="services" 
+    data-aos= "fade-up"
+    className="bg-white px-6 py-12">
       <h2 className="text-brand-dark text-3xl font-bold text-center mb-2">
         Services Offered
       </h2>

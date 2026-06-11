@@ -5,6 +5,7 @@ function Hero() {
   return (
     <div
         id="hero"
+        data-aos= "fade-in"
         className="relative min-h-screen flex flex-col items-center justify-center px-6 text-center"
         style={{ backgroundImage: `url(${bgKim})`, backgroundSize: "contain", backgroundPosition: "center" }}
         >

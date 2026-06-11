@@ -2,7 +2,9 @@ import logo from "../assets/Logo.jpg"
 
 function Footer() {
   return (
-    <div className="bg-brand-dark px-6 py-10 flex flex-col items-center text-center gap-6">
+    <div 
+    data-aos= "fade-up"
+    className="bg-brand-dark px-6 py-10 flex flex-col items-center text-center gap-6">
       <img src={logo} alt="Madame Kush LLC" className="h-16 w-auto" />
 
       <p className="text-white text-sm">
@@ -10,10 +12,10 @@ function Footer() {
       </p>
 
       <div className="flex flex-col gap-2">
-        <a href="tel:4193888202" className="text-brand-gold text-lg font-bold">
+        <a href="tel:4193888702" className="text-brand-gold text-lg font-bold">
           📞 419-388-8202
         </a>
-        <a href="sms:4193888202" className="text-brand-gold text-lg font-bold">
+        <a href="sms:4193888702" className="text-brand-gold text-lg font-bold">
           💬 Send a Text
         </a>
       </div>

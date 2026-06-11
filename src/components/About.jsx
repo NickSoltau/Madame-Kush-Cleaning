@@ -2,7 +2,9 @@ import cartoonKim from "../assets/cartoonKim.jpg"
 
 function About() {
   return (
-    <div id="about" className="bg-brand-dark px-6 py-12 flex flex-col items-center text-center">
+    <div id="about" 
+    data-aos= "fade-up"
+    className="bg-brand-dark px-6 py-12 flex flex-col items-center text-center">
         <h2 className="text-brand-gold text-3xl font-bold mb6">About Kim</h2>
         <img src={cartoonKim}
         alt="Kim- owner of Madame Kush LLC"
