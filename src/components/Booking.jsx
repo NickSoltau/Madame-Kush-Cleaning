@@ -1,4 +1,7 @@
+
+
 function Booking() {
+
   return (
     <div id="booking" 
     data-aos= "fade-up"
@@ -7,11 +10,24 @@ function Booking() {
       <p className="text-gray-600 text-lg mb-8">
         Ready for a clean space? Book your appointment below or call or text us directly.
       </p>
-
-      {/* Setmore booking widget will go here */}
-      <div className="w-full bg-gray-100 rounded-xl flex items-center justify-center py-16 mb-8">
-        <p className="text-gray-400 text-lg">Booking widget coming soon</p>
-      </div>
+    <a
+      href="https://madamekushcleaning.setmore.com"
+      target="_blank"
+      rel="noreferrer"
+      style={{
+        backgroundColor: "#2A9D8F",
+        color: "#fff",
+        padding: "16px 32px",
+        fontSize: "18px",
+        fontWeight: "600",
+        borderRadius: "50px",
+        cursor: "pointer",
+        marginBottom: "2rem",
+        textDecoration: "none",
+      }}
+    >
+      Book Now
+    </a>
 
       <a
         href="tel:4193888202"
