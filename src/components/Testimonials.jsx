@@ -16,14 +16,14 @@ function Testimonials() {
   const next = () => setCurrent((current + 1) % testimonials.length)
 
   return (
-    <div id="testimonials" 
-    data-aos= "fade-up"
-    className="bg-brand-teal px-6 py-12 flex flex-col items-center text-center">
+    <div id="testimonials" data-aos="fade-up" className="bg-brand-teal px-6 py-12 flex flex-col items-center text-center">
       <h2 className="text-white text-3xl font-bold mb-8">What Customers Say</h2>
 
-      <div className="bg-white rounded-xl px-6 py-8 max-w-sm w-full shadow-lg min-h-48 flex flex-col items-center justify-center">
-        <p className="text-gray-700 text-lg italic mb-6">"{testimonials[current].text}"</p>
-        <p className="text-brand-teal font-bold">— {testimonials[current].name}</p>
+      <div className="w-full md:w-3/4 flex flex-col md:flex-row gap-6 items-center justify-center">
+        <div className="bg-white rounded-xl px-6 py-8 md:flex-1 shadow-lg min-h-48 flex flex-col items-center justify-center">
+          <p className="text-gray-700 text-lg italic mb-6">"{testimonials[current].text}"</p>
+          <p className="text-brand-teal font-bold">— {testimonials[current].name}</p>
+        </div>
       </div>
 
       <div className="flex items-center gap-8 mt-8">

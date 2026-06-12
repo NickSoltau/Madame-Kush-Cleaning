@@ -19,32 +19,35 @@ function Services() {
         Only $20/hour
       </p>
 
-      <div className="flex flex-col gap-4">
-        {services.map((service) => (
-          <div
-            key={service}
-            className="flex items-center gap-3 bg-brand-teal px-4 py-3 rounded-xl"
-          >
-            <span className="text-brand-gold text-xl">✓</span>
-            <span className="text-white font-medium">{service}</span>
-          </div>
-        ))}
-      </div>
-
-      <div className="mt-10 bg-brand-dark rounded-xl px-6 py-6 text-center">
-        <p className="text-white font-bold text-lg mb-1">Serving:</p>
-        <p className="text-brand-gold">Fulton, Williams & Defiance Counties</p>
-        <p className="text-white font-bold text-lg mt-4 mb-1">Availability:</p>
-        <p className="text-brand-gold">Monday–Friday · Flexible Scheduling</p>
-      </div>
-      <div className="flex justify-center mt-8">
-         <a href="#booking"
-            className="bg-brand-gold text-brand-dark font-bold text-lg px-8 py-4 rounded-full"
+      <div className="flex flex-col md:flex-row md:gap-6">
+        <div className="flex flex-col gap-4 md:flex-1">
+          {services.map((service) => (
+            <div
+              key={service}
+              className="flex items-center gap-3 bg-brand-teal px-4 py-3 rounded-xl"
             >
-            Book Now
-            </a>
+              <span className="text-brand-gold text-xl">✓</span>
+              <span className="text-white font-medium">{service}</span>
+            </div>
+          ))}
+        </div>
 
-      </div>
+        <div className="mt-10 md:mt-0 md:flex-1 bg-brand-dark rounded-xl px-6 py-6 md:py-12 flex flex-col items-center justify-center text-center gap-6">
+          <div>
+            <p className="text-white font-bold text-2xl md:text-3xl mb-2">Serving:</p>
+            <p className="text-brand-gold text-lg md:text-xl">Fulton, Williams & Defiance Counties</p>
+          </div>
+          <div>
+            <p className="text-white font-bold text-2xl md:text-3xl mb-2">Availability:</p>
+            <p className="text-brand-gold text-lg md:text-xl">Monday–Friday · Flexible Scheduling</p>
+          </div>
+          <a href="#booking"
+            className="bg-brand-gold text-brand-dark font-bold text-lg px-8 py-4 rounded-full mt-4"
+          >
+            Book Now
+          </a>
+        </div>
+        </div>
       
     </div>
   )

@@ -13,7 +13,7 @@ function Footer() {
 
       <div className="flex flex-col gap-2">
         <a href="tel:4193888702" className="text-brand-gold text-lg font-bold">
-          📞 419-388-8202
+          📞 419-388-8702
         </a>
         <a href="sms:4193888702" className="text-brand-gold text-lg font-bold">
           💬 Send a Text
@@ -21,7 +21,7 @@ function Footer() {
       </div>
 
       <div className="flex gap-6">
-        <a href="https://www.facebook.com/profile.php?id=61571001456574" className="text-white text-lg">
+        <a href="https://www.facebook.com/MadameKush" className="text-white text-lg">
           Facebook
         </a>
         <a href="#" className="text-white text-lg">

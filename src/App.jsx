@@ -13,8 +13,10 @@ function App() {
       <Navbar />
       <Hero />
       <Services />
-      <About />
-      <Booking />
+      <div className="flex flex-col md:flex-row">
+        <About />
+        <Booking />
+      </div>
       <Testimonials />
       <Footer />
     </div>
